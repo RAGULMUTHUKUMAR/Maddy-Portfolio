@@ -1,0 +1,371 @@
+/* Import sleek gaming fonts */
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: #0d1117; /* Dark background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  background: #161b22;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 255, 200, 0.3);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #00ffc8; /* Neon Green */
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #00ffc8; /* Neon Green */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust the distance from text */
+  width: 0;
+  height: 3px; /* Border thickness */
+  background-color: #ff007f; /* Neon Pink */
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff007f; /* Neon Pink */
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ff007f; /* Neon Pink */
+}
+
+/* HERO SECTION */
+#hero {
+  background: url("./Assets/game.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.6);
+  position: relative;
+}
+
+/* Dark overlay effect */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.74);
+}
+
+/* Content inside hero */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.hero-content h2 {
+  font-size: 3.5rem;
+  color: #00ffc8; /* Neon Green */
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+/* Changing text effect */
+.changing-text {
+  font-weight: bold;
+  color: #ff007f; /* Neon Pink */
+  animation: textChange 4s infinite alternate;
+}
+
+/* Animation for changing skills */
+@keyframes textChange {
+  0% {
+    content: "Bug Hunting";
+  }
+  25% {
+    content: "QA Testing";
+  }
+  50% {
+    content: "User Experience Testing";
+  }
+  75% {
+    content: "Gameplay Optimization";
+  }
+  100% {
+    content: "Game Performance Analysis";
+  }
+}
+
+/* BUTTONS */
+.btn-group {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00ffc8;
+  color: #161b22;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+.btn:hover {
+  background: #ff007f;
+  transform: scale(1.1);
+}
+
+.btn-alt {
+  background: #ff007f;
+  color: white;
+}
+
+.btn-alt:hover {
+  background: #00ffc8;
+  color: #161b22;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #00ffc8;
+  color: #161b22;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn:hover {
+  background: #ff007f;
+  transform: scale(1.1);
+}
+
+/* About Section */
+#about p {
+  padding: 0 60px 0 60px;
+  text-align: justify;
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: 1.5rem;
+
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* PROJECTS */
+.project {
+  background: #161b22;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+}
+
+.project p,
+h3 {
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+  padding: 80px 20px;
+  background: #0d1117;
+  color: white;
+  text-align: center;
+}
+
+.experience-item {
+  background: #161b22;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+  text-align: left;
+}
+
+.experience-item h3 {
+  color: #00ffc8; /* Neon Green */
+  font-size: 1.8rem;
+}
+
+.experience-item h4 {
+  color: #ff007f; /* Neon Pink */
+  font-size: 1.2rem;
+}
+
+.experience-item p {
+  line-height: 1.6;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: larger;
+}
+
+/* CERTIFICATIONS SECTION */
+#certifications {
+  background: #161b22;
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 50px; /* Spacing between items */
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.certification-item {
+  background: rgba(0, 255, 200, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.certification-item:hover {
+  transform: scale(1.05);
+}
+
+.certification-item h3 {
+  color: #00ffc8;
+  font-size: 1.4rem;
+}
+
+.certification-item p {
+  font-size: 1rem;
+  color: #dcdcdc;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: larger;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+}
+
+/* CONTACT SECTION */
+#contact {
+  background: #161b22;
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: #ff007f; /* Neon Pink */
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#contact a {
+  color: #00ffc8; /* Neon Green */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+  color: #ff007f; /* Neon Pink */
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact p {
+    font-size: 1rem;
+  }
+}
+
+/* FOOTER */
+footer {
+  background: #161b22;
+  padding: 15px;
+  font-size: 0.9rem;
+}

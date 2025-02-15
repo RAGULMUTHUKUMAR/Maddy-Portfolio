@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madhavan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="nav-container">
+        <h1 class="logo">MADHAVAN A</h1>
+        <nav>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="hero-content">
+        <h2>Explore the World of Game Development & Testing</h2>
+        <h1 id="dynamic-text">
+          I specialize in <span class="changing-text">Quality Assurance</span>
+        </h1>
+        <p>
+          Passionate about uncovering hidden bugs, optimizing gameplay
+          mechanics, and ensuring a seamless player experience. With a sharp eye
+          for detail and a deep understanding of game functionality, I thrive on
+          enhancing quality, improving performance, and delivering polished,
+          immersive gaming experiences.
+        </p>
+        <div class="btn-group">
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate Game Tester and Quality Assurance Specialist with a
+        keen eye for detail and a deep understanding of game mechanics, user
+        experience, and bug detection. My expertise lies in identifying and
+        resolving gameplay issues, ensuring smooth performance, and enhancing
+        player engagement through thorough testing methodologies. With a
+        background in software testing, UI/UX evaluation, and bug reporting, I
+        thrive in fast-paced environments where precision and problem-solving
+        are key. My experience in automation testing, functional testing, and
+        regression testing helps me ensure that every game I test meets the
+        highest quality standards. Beyond testing, I have a strong foundation in
+        software development and machine learning, which allows me to analyze
+        data-driven insights and optimize game mechanics effectively. My goal is
+        to contribute to the gaming industry by delivering immersive, bug-free
+        experiences that keep players engaged and entertained.
+      </p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Thesis Forgery Detection using Machine Learning</h3>
+        <p>
+          Developed a machine learning model with 95% accuracy to identify
+          forged documents and automate document verification processes.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Food Waste Management</h3>
+        <p>
+          Built a web-based platform using Python and Flask to optimize food
+          distribution, reducing food waste by 30% during pilot testing.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <h2>My Experience</h2>
+
+      <div class="experience-item">
+        <h3>Software Development Intern</h3>
+        <h4>
+          Shiash Info Solutions Private Limited | September 2024 – November 2024
+        </h4>
+        <p>
+          During my internship at Shiash Info Solutions, I gained hands-on
+          experience in
+          <strong>developing and testing machine learning models</strong>
+          to enhance data-driven decision-making. I worked closely with
+          datasets, analyzing complex data to extract meaningful insights that
+          supported
+          <strong>business strategies</strong>. Collaborating with
+          cross-functional teams, I contributed to optimizing
+          <strong>model performance and accuracy</strong>, ensuring efficiency
+          and reliability. Additionally, I strengthened my expertise in
+          <strong>software development, debugging, and quality assurance</strong
+          >, refining my problem-solving skills in real-world scenarios.
+          Throughout my tenure, I demonstrated
+          <strong
+            >punctuality, adaptability, and a strong commitment to continuous
+            learning</strong
+          >, which helped me develop a deeper understanding of the field.
+        </p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+
+      <div class="certifications-grid">
+        <div class="certification-item">
+          <h3>
+            Accenture North America Data Analytics and Visualization Job
+            Simulation
+          </h3>
+          <p>Completed: November 2024</p>
+        </div>
+
+        <div class="certification-item">
+          <h3>Accenture Nordics Software Engineering</h3>
+          <p>Completed: February 2025</p>
+        </div>
+
+        <div class="certification-item">
+          <h3>Full Stack with Python Programming</h3>
+          <p>GUVI Geek Networks | Completed: October 2023</p>
+        </div>
+
+        <div class="certification-item">
+          <h3>Google Project Management Professional Certificate</h3>
+          <p>Coursera | Completed: May 2023</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Email:
+        <a href="mailto:madhavandeveloper2024@gmail.com"
+          >madhavandeveloper2024@gmail.com</a
+        >
+      </p>
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/madhavan-a-044778278"
+          target="_blank"
+          >Madhavan A</a
+        >
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Gaming Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+      const words = [
+        "Bug Hunting",
+        "QA Testing",
+        "User Experience Testing",
+        "Gameplay Optimization",
+        "Game Performance Analysis",
+      ];
+      let index = 0;
+
+      function changeText() {
+        document.querySelector(".changing-text").textContent = words[index];
+        index = (index + 1) % words.length;
+      }
+
+      setInterval(changeText, 2000); // Change text every 2 seconds
+    </script>
+  </body>
+</html>
